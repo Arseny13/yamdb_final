@@ -1,5 +1,13 @@
 from uuid import uuid4
 
+from api.filters import TitleFilter
+from api.mixins import CreateListDestroyViewSet
+from api.permissions import IsAdmin, IsAdminOrReadOnly, IsReadOnly
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, MeSerializer, ReviewSerializer,
+                             SignUpSerializer, TitleSerializer,
+                             TitleSerializerCreate, TokenSerializer,
+                             UserSerializer)
 from django.contrib.auth.hashers import check_password, make_password
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
@@ -11,15 +19,6 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Category, Comment, Genre, Review, Title
-
-from api.filters import TitleFilter
-from api.mixins import CreateListDestroyViewSet
-from api.permissions import IsAdmin, IsAdminOrReadOnly, IsReadOnly
-from api.serializers import (CategorySerializer, CommentSerializer,
-                             GenreSerializer, MeSerializer, ReviewSerializer,
-                             SignUpSerializer, TitleSerializer,
-                             TitleSerializerCreate, TokenSerializer,
-                             UserSerializer)
 from users.models import User
 
 
