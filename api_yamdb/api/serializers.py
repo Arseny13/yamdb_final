@@ -181,5 +181,4 @@ class TitleSerializer(serializers.ModelSerializer):
 
     def get_rating(self, obj):
         """Валидация для рейтитнга."""
-        rating = obj.reviews.aggregate(Avg('score')).get('score__avg')
-        return rating
+        return obj.reviews.aggregate(Avg('score')).get('score__avg')
