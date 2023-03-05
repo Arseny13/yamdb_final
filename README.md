@@ -1,6 +1,8 @@
 
 <h1 align="center"> Проект: запуск docker-compose </h1>
 
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 ___
 <h4>Автор:</h4>
 
