@@ -1,7 +1,9 @@
 # .github/workflows/**main.yml**
 name: Django-app yamdb_final
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   tests:
