@@ -1,7 +1,7 @@
 
 <h1 align="center"> CI и CD проекта api_yamdb</h1>
 
-https://github.com/Arseny13/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![workflow](https://github.com/Arseny13/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ___
 <h4>Автор:</h4>
