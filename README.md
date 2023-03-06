@@ -11,7 +11,7 @@ https://github.com/Arseny13
 
 <h4>Cайт</h4>
 
-- сайт: arsenyxiii.ddns.net
+- сайт: arsenyxiii.ddns.net #не работает
 - ip: 51.250.88.11
 
 <h4>Cуперпользователь</h4>
