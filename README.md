@@ -16,26 +16,32 @@ https://github.com/Arseny13
 
 <h4>Cуперпользователь</h4>
 
-- логин superuser: admin
-- пароль для superuser: 1234
+{
+  "username": "admin",
+  "confirmation_code": "7e76902c-edfe-4e09-80c1-f1cba1079500"
+}
 
 <h4>Админ</h4>
 
-- логин admin: admin1
-- пароль для админа: 1234
-- код подтв: 1234
+{
+  "username": "admin1",
+  "confirmation_code": "c4c22bdf-d0bb-4e45-b107-26df86b12222"
+}
 
 <h4>Пользователь</h4>
 
-- логин user: user
-- пароль для user: 1234
-- код подтв: 1234
+{
+  "username": "test2",
+  "confirmation_code": "e7594525-0016-4fb7-9401-0f2f02c2fcd5"
+}
 
 <h4>Модератор</h4>
 
-- логин moder: moder
-- пароль для админа: 1234
-- код подтв: 1234
+{
+  "username": "moder1",
+  "confirmation_code": "2c356512-a7af-4b80-8a1e-5888aa3e57bc"
+}
+
 
 <h2>Описание проекта</h2>
 
