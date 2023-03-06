@@ -3,7 +3,7 @@ name: Django-app yamdb_final
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   tests:
