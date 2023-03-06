@@ -14,20 +14,28 @@ https://github.com/Arseny13
 - сайт: arsenyxiii.ddns.net
 - ip: 51.250.88.11
 
-  - - логин superuser: admin
-    - пароль для superuser: 1234
+<h4>Cуперпользователь</h4>
 
-- - логин admin: admin1
-  - пароль для админа: 1234
-  - код подтв: 1234
+- логин superuser: admin
+- пароль для superuser: 1234
 
-- - логин user: user
-  - пароль для user: 1234
-  - код подтв: 1234
+<h4>Админ</h4>
 
-- - логин moder: moder
-  - пароль для админа: 1234
-  - код подтв: 1234
+- логин admin: admin1
+- пароль для админа: 1234
+- код подтв: 1234
+
+<h4>Пользователь</h4>
+
+- логин user: user
+- пароль для user: 1234
+- код подтв: 1234
+
+<h4>Модератор</h4>
+
+- логин moder: moder
+- пароль для админа: 1234
+- код подтв: 1234
 
 <h2>Описание проекта</h2>
 
@@ -130,13 +138,13 @@ https://github.com/Arseny13
 
 Для того чтобы получить, описанные понятным языком эндпоинты и настройки, да ещё с примерами запросов, да ещё с образцами ответов! Читай ReDoc, документация в этом формате доступна по ссылке:
 
-_http://localhost/redoc/_
+_http://arsenyxiii.ddns.net/redoc/_
 
 <h2>Как работать с API проекта YaMDb</h2>
 
 **1. Вначале надо пользователю надо зарегистрироваться**
 
-POST localhost/api/v1/signup/
+POST arsenyxiii.ddns.net/api/v1/signup/
 Content-Type: application/json
 
 {
@@ -151,7 +159,7 @@ Content-Type: application/json
 
 *Пример такого запроса:*
 
-POST localhost/api/v1/auth/token/
+POST arsenyxiii.ddns.net/api/v1/auth/token/
 Content-Type: application/json
 
 {
@@ -165,7 +173,7 @@ Content-Type: application/json
 
 **4. Если вы хотите добавить отзыв:**
 
-POST http://localhost/api/v1/titles/{title_id}/reviews/
+POST http://arsenyxiii.ddns.net/api/v1/titles/{title_id}/reviews/
 Content-Type: application/json
 Authorization: Bearer "eyJ0eXAiOi..."
 
