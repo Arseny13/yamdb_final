@@ -87,7 +87,7 @@ class User(AbstractUser):
     )
     confirmation_code = models.CharField(
         'Код подтверждения',
-        max_length=37,
+        max_length=36,
         null=True
     )
     role = models.CharField(
