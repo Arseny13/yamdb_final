@@ -170,6 +170,7 @@ class TitleSerializerCreate(serializers.ModelSerializer):
         """Класс мета для модели Title."""
         model = Title
         fields = ('id', 'name', 'description', 'category', 'genre', 'year',)
+        optional_fields = ('description',)
 
     def validate_genre(self, value):
         if not value:
