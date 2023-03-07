@@ -176,6 +176,20 @@ class TitleSerializerCreate(serializers.ModelSerializer):
             raise serializers.ValidationError('Проверьте genre')
         return value
 
+    def to_representation(self, instance):
+        data = super(TitleSerializerCreate, self).to_representation(instance)
+        data['category'] = {
+            "name": instance.category.name,
+            "slug": instance.category.slug
+        }
+        data['genre'] = [
+            {
+                "name": genre.name,
+                "slug": genre.slug
+            } for genre in instance.genre.all()
+        ]
+        return data
+
 
 class TitleSerializer(serializers.ModelSerializer):
     """Сериализатор для модели Title."""
