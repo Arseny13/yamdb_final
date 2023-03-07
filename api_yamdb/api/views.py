@@ -120,14 +120,9 @@ def send_code(request):
     username = request.data.get('username')
     if serializer.is_valid():
         confirmation_code = str(uuid4())
-        print('code до = ', confirmation_code)
         User.objects.get_or_create(
             username=username,
             email=email
-        )
-        print('code после =  ', make_password(
-            confirmation_code, salt=None, hasher='default'
-        )
         )
         User.objects.filter(username=username, email=email).update(
             confirmation_code=make_password(
@@ -154,8 +149,6 @@ def get_token(request):
         user = get_object_or_404(
             User, username=username,
         )
-        print('code', confirmation_code)
-        print('user.code', user.confirmation_code)
         if check_password(confirmation_code, user.confirmation_code):
             token = AccessToken.for_user(user)
             return Response(
