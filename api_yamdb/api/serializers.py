@@ -165,12 +165,12 @@ class TitleSerializerCreate(serializers.ModelSerializer):
         slug_field='slug',
         required=True
     )
+    description = serializers.TextField(required=False)
 
     class Meta:
         """Класс мета для модели Title."""
         model = Title
         fields = ('id', 'name', 'description', 'category', 'genre', 'year',)
-        optional_fields = ('description',)
 
     def validate_genre(self, value):
         if not value:
