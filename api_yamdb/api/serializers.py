@@ -165,7 +165,6 @@ class TitleSerializerCreate(serializers.ModelSerializer):
         slug_field='slug',
         required=True
     )
-    description = serializers.CharField(required=False)
 
     class Meta:
         """Класс мета для модели Title."""
