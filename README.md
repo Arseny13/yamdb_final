@@ -11,36 +11,38 @@ https://github.com/Arseny13
 
 <h4>Cайт</h4>
 
-- сайт: arsenyxiii.ddns.net #не работает
+- сайт: arsenyxiii.ddns.net
 - ip: 51.250.88.11
 
 <h4>Cуперпользователь</h4>
 
 {
   "username": "admin",
-  "confirmation_code": "7e76902c-edfe-4e09-80c1-f1cba1079500"
+  "confirmation_code": "28ba91ea-3e26-4be5-8812-ac022ddb88b7"
 }
 
 <h4>Админ</h4>
 
 {
   "username": "admin1",
-  "confirmation_code": "c4c22bdf-d0bb-4e45-b107-26df86b12222"
-}
-
-<h4>Пользователь</h4>
-
-{
-  "username": "test2",
-  "confirmation_code": "e7594525-0016-4fb7-9401-0f2f02c2fcd5"
+  "confirmation_code": "9339b635-b290-4f07-ae5f-efc189c5620c"
 }
 
 <h4>Модератор</h4>
 
 {
-  "username": "moder1",
-  "confirmation_code": "2c356512-a7af-4b80-8a1e-5888aa3e57bc"
+  "username": "moder",
+  "confirmation_code": "c2309392-28f1-4de8-8a7c-ac1eaf45e509"
 }
+
+
+<h4>Пользователь</h4>
+
+{
+  "username": "user",
+  "confirmation_code": "f652715e-6aae-4444-acf6-b37933203564"
+}
+
 
 
 <h2>Описание проекта</h2>
