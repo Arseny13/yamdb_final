@@ -84,6 +84,7 @@ class Title(models.Model):
     description = models.TextField(
         'Описание тайтла',
         null=True,
+        blank=True,
         help_text='Введите описание тайтла'
     )
 
