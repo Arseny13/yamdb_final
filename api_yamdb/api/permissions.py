@@ -11,7 +11,7 @@ class IsReadOnly(BasePermission):
         """Пользователь User не может редактировать чужой пост."""
         return (
             request.method in SAFE_METHODS or obj.author == request.user
-            or not request.user.is_user
+            or request.user.is_admin or request.user.is_moderator
         )
 
 
