@@ -91,12 +91,24 @@ class UserSerializer(serializers.ModelSerializer):
 
 class TokenSerializer(serializers.Serializer):
     """Сериализатор для токена."""
-    username = serializers.CharField(max_length=150, required=True)
+    username = serializers.CharField(
+        max_length=150,
+        required=True,
+        validators=(
+            RegexValidator(r'^[\w.@+-]+$', message='Проверьте username!'),
+        )
+    )
     confirmation_code = serializers.CharField(max_length=36, required=True)
 
     class Meta:
         model = User
         fields = ('username', 'confirmation_code')
+
+    def validate_username(self, value):
+        """Валидация для имя пользователя."""
+        if not User.objects.filter(username=value).exists():
+            raise serializers.ValidationError('Нет username!')
+        return value
 
 
 class SignUpSerializer(serializers.Serializer):

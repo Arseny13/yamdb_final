@@ -153,7 +153,7 @@ def get_token(request):
             token = AccessToken.for_user(user)
             return Response(
                 {'token': f'{token}'},
-                status=status.HTTP_201_CREATED
+                status=status.HTTP_200_OK
             )
         return Response({'confirmation_code': 'Неверный код подтверждения'},
                         status=status.HTTP_400_BAD_REQUEST)
